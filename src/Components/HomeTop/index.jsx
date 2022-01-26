@@ -7,11 +7,11 @@ const HomeTop = () => {
         <Box component="div" className='home__top' sx={{
             backgroundColor:'#FBFBFB',
             padding:'20px 20px',
-            marginBottom:'50px'
+            marginBottom:'30px'
         }}>
             <Box component="h2" sx={{
                 fontSize:'23px',
-                mb:'30px',
+                mb:'20px',
                 fontWeight:'normal'
             }}>Welcome John!</Box>
             <Box component="p">How to get jobs with top U.S companies</Box>
@@ -19,7 +19,7 @@ const HomeTop = () => {
             <Box component="div" sx={{
                 display: 'flex',
                 alignItems: 'center',
-                marginTop:'30px'
+                flexWrap:'wrap'
             }}>
                 <HomeTopLevel counter="1" text1="Take 1" text2="Test" />
                 <HomeTopLevel counter="2" text1="Pass Live" text2="Coding Challenge" />

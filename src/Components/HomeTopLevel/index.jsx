@@ -9,17 +9,19 @@ const HomeTopLevel = ({ counter, text1 , text2}) => {
             padding: '10px',
             boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
             width: '150px',
-            marginRight:'20px'
+            marginRight:'20px',
+            marginTop:'20px'
         }}>
             <Box component="span" sx={{
                 backgroundColor: '#999999',
                 color: '#fff',
-                width: '20px',
-                height: '20px',
+                width: '18px',
+                height: '18px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                borderRadius: '50%'
+                borderRadius: '50%',
+                fontSize:'14px',
             }}>{counter}</Box>
 
             <Box component="p" sx={{
