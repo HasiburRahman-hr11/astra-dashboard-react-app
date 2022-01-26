@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { AssignmentTurnedIn, Home , Mail, Work} from '@mui/icons-material';
 
 const Sidebar = () => {
@@ -8,7 +8,6 @@ const Sidebar = () => {
 
     const location = useLocation();
     const { pathname } = location;
-    const splitLocation = pathname.split("/");
 
     return (
         <div className='sidebar'>

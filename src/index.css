@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ddd;
+  background-color: #fff;
   scroll-behavior: smooth;
   font-size: 16px;
 }
@@ -20,4 +20,12 @@ form {
 a{
   text-decoration: none;
   color: initial;
+}
+
+.page__wrapper{
+  padding: 50px 0;
+  padding-left: 270px;
+  padding-right: 50px;
+  height: 100vh;
+  overflow-y: auto;
 }
