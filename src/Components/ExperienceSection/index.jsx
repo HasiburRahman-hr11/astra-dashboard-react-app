@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid } from '@mui/material';
 import { Edit, Yard } from '@mui/icons-material';
 
-const ExperienceSection = ({ userData }) => {
+const ExperienceSection = ({ userData , setModalOpen}) => {
     return (
         <Box component="div" className='profile__section' sx={{
             display: 'flex',
@@ -38,7 +38,7 @@ const ExperienceSection = ({ userData }) => {
 
             </Grid>
 
-            <Edit sx={{ color: '#CDCDCD', cursor: 'pointer'}} />
+            <Edit sx={{ color: '#CDCDCD', cursor: 'pointer'}} onClick={()=>setModalOpen(true)}/>
         </Box>
     );
 };

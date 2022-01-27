@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid } from '@mui/material';
 import { Edit, EventAvailable } from '@mui/icons-material';
 
-const AvailabilitySection = ({ userData }) => {
+const AvailabilitySection = ({ userData , setModalOpen }) => {
     return (
         <Box component="div" className='profile__section' sx={{
             display: 'flex',
@@ -37,7 +37,7 @@ const AvailabilitySection = ({ userData }) => {
 
             </Grid>
 
-            <Edit sx={{ color: '#CDCDCD', cursor: 'pointer' }} />
+            <Edit sx={{ color: '#CDCDCD', cursor: 'pointer' }} onClick={()=>setModalOpen(true)} />
         </Box>
     );
 };

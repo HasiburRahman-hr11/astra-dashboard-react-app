@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid } from '@mui/material';
 import { Edit, Email, Phone, LinkedIn, GitHub } from '@mui/icons-material';
 
-const UserInfoSection = ({ userData }) => {
+const UserInfoSection = ({ userData , setModalOpen}) => {
     return (
         <div className='profile__section'>
             <Box component="div" sx={{
@@ -27,7 +27,7 @@ const UserInfoSection = ({ userData }) => {
                         justifyContent: 'center',
                         marginRight: '15px'
                     }}>
-                        {userData?.userName ? '' : 'John'}
+                        {userData?.userName ? userData?.userName?.split(' ')[0] : 'John'}
                     </Box>
                     <Box component="div">
                         <Box component="h4" sx={{
@@ -45,7 +45,7 @@ const UserInfoSection = ({ userData }) => {
                     </Box>
                 </Box>
 
-                <Edit sx={{ color: '#CDCDCD', cursor: 'pointer' }} />
+                <Edit sx={{ color: '#CDCDCD', cursor: 'pointer' }} onClick={()=>setModalOpen(true)}/>
             </Box>
 
 

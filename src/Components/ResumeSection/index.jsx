@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { Description, Edit, ArrowForward } from '@mui/icons-material';
 
-const ResumeSection = ({ userData, setUserData }) => {
+const ResumeSection = ({ userData, setUserData}) => {
     return (
         <Box component="div" className='profile__section' sx={{
             display: 'flex',
@@ -43,7 +43,7 @@ const ResumeSection = ({ userData, setUserData }) => {
                         fontSize: '13px'
                     }} />
                 </Box>
-                <Edit sx={{ color: '#CDCDCD' }} />
+                <Edit sx={{ color: '#CDCDCD' }}/>
             </label>
             <input
                 type="file"
