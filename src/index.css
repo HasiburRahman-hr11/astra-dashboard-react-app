@@ -17,19 +17,27 @@ form {
   width: 100%;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: initial;
 }
 
-.page__wrapper{
+.page__wrapper {
   padding: 50px 0;
   padding-left: 270px;
   padding-right: 50px;
   height: 100vh;
   overflow-y: auto;
+}
+
+.profile__section {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
 }
