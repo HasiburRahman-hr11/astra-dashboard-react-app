@@ -9,11 +9,11 @@ const Profile = () => {
     const [userData , setUserData] = useState({
         resume:'',
         userName:'',
-        address:'',
+        country:'',
         email:'',
         phone:'',
         linkedIn:'',
-        github:'',
+        gitHub:'',
         experience:'',
         englishProficiency:'',
         availability:''
@@ -21,7 +21,7 @@ const Profile = () => {
     return (
         <div className='page__wrapper'>
             <Box component="div" sx={{
-                borderRight:'1px solid #efefef'
+                borderRight:'1px solid #f5f5f5'
             }}>
                 <ResumeSection userData={userData} setUserData={setUserData} />
                 <UserInfoSection userData={userData}/>

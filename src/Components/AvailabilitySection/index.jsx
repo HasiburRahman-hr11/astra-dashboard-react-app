@@ -1,11 +1,16 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-const AvailabilitySection = ({userData}) => {
+const AvailabilitySection = ({ userData }) => {
     return (
-        <div className='profile__section' style={{borderBottom:'0'}}>
+        <Box component="div" className='profile__section' sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            borderBottom: '0'
+        }}>
             Availability Section
-        </div>
+        </Box>
     );
 };
 

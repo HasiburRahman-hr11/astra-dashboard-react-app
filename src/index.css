@@ -35,9 +35,6 @@ a {
 }
 
 .profile__section {
-  padding: 20px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 30px 20px;
   border-bottom: 1px solid #efefef;
 }
