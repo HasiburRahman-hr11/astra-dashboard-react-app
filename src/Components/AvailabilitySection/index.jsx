@@ -23,7 +23,10 @@ const AvailabilitySection = ({ userData , setModalOpen }) => {
                 </Grid>
 
                 <Grid item md={6} sm={6} xs={12} sx={{
-                    textAlign: 'right',
+                    textAlign:{
+                        sm:'right',
+                        xs:'left'
+                    },
                     fontSize: '14px'
                 }}>
                     <Box component="p" sx={{

@@ -9,15 +9,15 @@ import EditProfileModal from '../../Components/EditProfileModal';
 const Profile = () => {
     const [userData , setUserData] = useState({
         resume:'',
-        userName:'',
-        country:'',
-        email:'',
-        phone:'',
+        userName:'John Doe',
+        country:'Australia',
+        email:'johndoe007@gmail.com',
+        phone:'+355 434 234 242 3',
         linkedIn:'',
         gitHub:'',
-        experience:'',
-        englishProficiency:'',
-        availability:''
+        experience:'5 years',
+        englishProficiency:'Average english proficiency',
+        availability:'Full time'
     });
 
     const [modalOpen , setModalOpen] = useState(false);

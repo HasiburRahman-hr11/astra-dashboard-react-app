@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
     position: fixed;
     width: 270px;
     height: 100vh;
@@ -6,31 +6,40 @@
     left: 0;
     top: 0;
     padding: 30px 20px;
+    z-index: 999;
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px;
 }
-.sidebar .logo{
+
+.sidebar .logo {
     margin-bottom: 40px;
 }
-.sidebar .logo h2{
+
+.sidebar .logo h2 {
     font-weight: normal;
     font-size: 30px;
     cursor: pointer;
     color: #000;
 }
 
-.sidebar .job__availability{
+.sidebar .job__availability {
     margin-bottom: 40px;
 }
-.sidebar p.list__item{
+
+.sidebar p.list__item {
     border-radius: 15px;
 }
-.sidebar ul.sidebar__list{
+
+.sidebar ul.sidebar__list {
     list-style: none;
     border-radius: 15px;
     overflow: hidden;
     background-color: #DDDDDF;
     min-height: 300px;
 }
-.sidebar p.list__item , .sidebar .list__item a{
+
+.sidebar p.list__item,
+.sidebar .list__item a {
     display: flex;
     align-items: center;
     color: #000;
@@ -40,11 +49,56 @@
     font-size: 18px;
 }
 
-.sidebar .list__item.active a{
+.sidebar .list__item.active a {
     background-color: #fff;
     position: relative;
 }
 
-.sidebar .list__item span{
+.sidebar .list__item span {
     margin-left: 10px;
+}
+
+.toggle__menu_open {
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    background-color: #777;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    z-index: 99;
+}
+
+.sidebar__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -150%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+    transition: 0.5s ease;
+}
+
+@media only screen and (max-width:900px) {
+    .sidebar {
+        left: -100%;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+    .sidebar__overlay.open{
+        display: block;
+        left: 0;
+    }
+
+    .toggle__menu_open {
+        display: inline-flex;
+    }
 }
